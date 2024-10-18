@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <h2 style="text-align: center;font-size: 2rem;">Tip Calculator</h2>
+            <p style="border-bottom: 2px solid rgba(128, 128, 128, 0.5);width: 100%;"></p>
+        
+        <br>
+        <label style="padding-left: 12px;">Bill Amount</label>
+        <br>
+        <button  style="margin-left:12px ;"><i class="fa fa-usd" aria-hidden="true"></i></button>
+        <input id="amount" type="number">
+        <br>
+        <br>
+        <label style="padding-left: 12px;" for="">Number of Guest</label>
+        <br>
+        <button  style="margin-left:12px ;"><i class="fa-regular fa-user"></i></button><input id="guest" type="number">
+        <br>
+        <br>
+        <label style="padding-left: 12px;" for="">Service Quality</label>
+        <br>
+        <select style="margin-left:12px ;" id="quality">
+            <option disabled selected value="0">choose</option>
+            <option value="0.3">30% - It was tasty</option>
+            <option value="0.2">20% - It was ok</option>
+            <option value="0.15">15% - It was BAD</option>
+            <option value="0.05">5% - It was worst</option>
+        </select>
+        <br>
+        <div style="text-align: center;" id="a">
+            <p style="border-bottom: 2px solid rgba(128, 128, 128, 0.5);"></p>
+            <button class="calculate-btn" onclick="calculate()" style="margin: 12px;" >Calculate</button>
+        </div>
+        <!-- <button onclick="increase(1)" style="width: 100px;height: 50px;">increase</button>
+        <button onclick="decrease(-1)" style="width: 100px;height: 50px;">decrease</button> -->
+    </div>
+    <div id="tipAmount"></div>
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
